@@ -310,9 +310,9 @@ def testAndPlot(d,e,m,b,r,rd,yColunm,dataSet):
 
     plt.show()
 
-d = [i for i in range(1,10)]
+d = [i for i in range(10,20)]
 d.append(None)
-e = range(1,10)
+e = range(1,100)
 
 para_grids = {
             "max_depth"    : d,
@@ -330,11 +330,11 @@ normalizeColumn(dataSet,1)
 normalizeColumn(dataSet,yColunm)
 
 if __name__ == '__main__':
-    createProcessByBestRes(4,regressor,dataSet,range(100,900),yColunm)
+    createProcessByBestRes(4,regressor,dataSet,range(0,100),yColunm)
     #createProcessByBestMean(4,regressor,dataSet,range(64,74),yColunm)
 
 
-#testAndPlot(None,8,'log2',True,0,62,2,dataSet)
+#testAndPlot(None, 5, 'log2', False, 0, 950, 2,dataSet)
 #testAndPlot(9,3,'log2',False,0,64,2,dataSet)
 
 ''' Experimento 1:
@@ -348,11 +348,31 @@ if __name__ == '__main__':
 [0.014469156505887683, 0.7005457304010185, [8, 3, 'log2', False, 0, 930], [7, 1, 'log2', True, 0, 950, 950]]
 [0.016403440980570134, 0.553050536238382, [5, 3, 'auto', True, 0, 990], [5, 1, 'log2', True, 0, 917]]
 [0.012256050922095392, 0.7495031992705566, [None, 5, 'log2', False, 0, 950, 950], [None, 5, 'log2', False, 0, 950, 950]]
+[0.01671618967066996, 0.454347582044505, [3, 4, 'log2', True, 0, 729], [3, 1, 'auto', True, 0, 519]]
+[0.00945707666456554, 0.6645085207900854, [8, 3, 'auto', False, 0, 295], [7, 1, 'auto', False, 0, 179, 295]]
+[0.015085046469587395, 0.5583756408726119, [5, 4, 'log2', False, 0, 729], [5, 8, 'auto', True, 0, 662]]
+[0.009473278344713117, 0.654271196173569, [8, 5, 'auto', False, 0, 102, 160, 169, 169, 179, 179, 237, 295], [9, 3, 'auto', False, 0, 179]]
+
+    [0.01671618967066996, 0.454347582044505, [3, 4, 'log2', True, 0, 729], [3, 1, 'auto', True, 0, 519]]
+[0.00945707666456554, 0.6645085207900854, [8, 3, 'auto', False, 0, 295], [7, 1, 'auto', False, 0, 179, 295]]
+[0.015085046469587395, 0.5583756408726119, [5, 4, 'log2', False, 0, 729], [5, 8, 'auto', True, 0, 662]]
 
     [0.012888415118027007, 0.6065124470802861, [90, 8, 'log2', True, 0, 62], [90, 50, 'log2', False, 0, 33]]
     [0.012888415118027007, 0.6065124470802861, [93, 8, 'log2', True, 0, 62], [93, 50, 'log2', False, 0, 33]]
     [0.012888415118027007, 0.6065124470802861, [96, 8, 'log2', True, 0, 62], [96, 50, 'log2', False, 0, 33]]
     [0.012888415118027007, 0.6065124470802861, [99, 8, 'log2', True, 0, 62], [98, 50, 'log2', False, 0, 33]]
+
+
+
+
+coluna 3
+
+[0.0038540164051903796, 0.6011196688597428, [3, 1, 'log2', True, 0, 998], [3, 1, 'log2', False, 0, 976]]
+[0.003968774499277207, 0.5464588739613511, [6, 5, 'auto', True, 0, 998], [6, 1, 'auto', False, 0, 968, 976, 998]]
+[0.0034914650172396464, 0.5903406666121734, [4, 1, 'log2', False, 0, 985, 998], [5, 1, 'log2', False, 0, 976]]
+[0.003743979757781881, 0.6542838239956197, [9, 6, 'log2', False, 0, 970], [9, 3, 'log2', False, 0, 950]]
+
+
 
     Melhor resultado média 
 
